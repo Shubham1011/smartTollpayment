@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Activities.SigninActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="231dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="DigiTolling"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <Button
+        android:id="@+id/btnMail"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button3"
+        android:drawableLeft="@drawable/ic_action_mail"
+        android:paddingLeft="8dp"
+        android:text="Sign in with Mail"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnPhone"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button4"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:paddingLeft="8dp"
+        android:text="Sign in With Phone"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMail"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/newUserText"
+        android:layout_width="167dp"
+        android:layout_height="27dp"
+        android:text="Not a user?Register"
+        android:textSize="18dp"
+        android:textColor="#FC2F45"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhone"
+        app:layout_constraintVertical_bias="0.516" />
+</androidx.constraintlayout.widget.ConstraintLayout>

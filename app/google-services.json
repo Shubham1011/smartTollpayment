@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "760038030039",
+    "firebase_url": "https://digitaltoll.firebaseio.com",
+    "project_id": "digitaltoll",
+    "storage_bucket": "digitaltoll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760038030039:android:c387084778c922728d0e92",
+        "android_client_info": {
+          "package_name": "com.example.digitaltolling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760038030039-9iu1grvtfhbl8pnjt1sdakjlrum1t537.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digitaltolling",
+            "certificate_hash": "1f1f6bb519672ab6398afce8227ab4d9b314d3cb"
+          }
+        },
+        {
+          "client_id": "760038030039-hubrfm97e1lnvo4j6hev8joi85vunh88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYhQAx_PgzJuiXSbtXqFnhCZ-hZoZWRvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760038030039-hubrfm97e1lnvo4j6hev8joi85vunh88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

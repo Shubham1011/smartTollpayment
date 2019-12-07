@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0000"
+    tools:context=".Activities.RegisterActivity">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="65dp"
+        android:text="Vehicle Information"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+
+        />
+
+    <ImageView
+        android:id="@+id/regVehiclePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="20dp"
+
+        android:src="@drawable/carphoto" />
+
+    <EditText
+        android:background="@drawable/reg_edittext_style"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Vehicle Name"
+        android:textColor="#1900ff"
+        android:id="@+id/vehicleNameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <EditText
+        android:background="@drawable/reg_edittext_style"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Vehicle plate no."
+        android:inputType="number"
+        android:textColor="#1900ff"
+        android:id="@+id/plateNoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:background="@drawable/reg_edittext_style"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Vehicle color"
+        android:textColor="#1900ff"
+        android:id="@+id/colorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="45dp"
+            android:text="Vehicle type :"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"/>
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="190dp"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/vehicleRegisterButton"
+        android:layout_width="220dp"
+        android:layout_height="49dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button2"
+
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
