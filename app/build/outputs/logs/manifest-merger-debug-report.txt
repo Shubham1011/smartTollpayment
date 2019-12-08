@@ -169,6 +169,18 @@ MERGED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transfor
 MERGED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:11:5-80
 	android:name
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:21:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:23:5-81
+MERGED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:10:5-81
+MERGED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:23:22-78
+uses-feature#android.hardware.Camera
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:24:1-93
+	android:required
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:24:54-77
+	android:name
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:24:15-53
 application
 ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:25:5-80:19
 MERGED from [com.karumi:dexter:6.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\c455aed280482af5df50f02b915224a5\dexter-6.0.0\AndroidManifest.xml:26:5-30:19
@@ -553,10 +565,6 @@ ADDED from [com.google.firebase:firebase-database:19.2.0] C:\Users\Shubham\.grad
 		ADDED from [com.google.firebase:firebase-database:19.2.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\01fdb7b1bbf63122a3620af2e31db437\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:19.2.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\01fdb7b1bbf63122a3620af2e31db437\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:10:5-81
-	android:name
-		ADDED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:10:22-78
 activity#com.paytm.pgsdk.PaytmPGActivity
 ADDED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:14:9-17:47
 	android:screenOrientation

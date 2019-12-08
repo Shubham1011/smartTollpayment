@@ -29,6 +29,7 @@
         android:layout_margin="30dp"
         android:layout_marginBottom="20dp"
 
+        android:onClick="getimage"
         android:src="@drawable/carphoto" />
 
     <EditText
@@ -56,7 +57,6 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
         android:hint="Vehicle plate no."
-        android:inputType="number"
         android:textColor="#1900ff"
         android:id="@+id/plateNoId"
         android:layout_width="match_parent"
