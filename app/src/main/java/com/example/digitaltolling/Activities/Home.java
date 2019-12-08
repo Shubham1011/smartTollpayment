@@ -3,9 +3,12 @@ package com.example.digitaltolling.Activities;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import com.example.digitaltolling.Models.Toll;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.util.Log;
 import android.view.View;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.view.GravityCompat;
@@ -15,8 +18,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.digitaltolling.Fragments.HomeFragment;
@@ -32,14 +37,20 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import static com.example.digitaltolling.Activities.MapsActivity.tollList;
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
-    DatabaseReference ref;
-
+    DatabaseReference ref,tollref;
+    private ArrayAdapter<Toll> tollArrayAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +61,29 @@ public class Home extends AppCompatActivity
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
 
+        tollref=FirebaseDatabase.getInstance().getReference().child("Toll");
+        tollArrayAdapter=new ArrayAdapter<Toll>(this,android.R.layout.simple_list_item_1,tollList);
 
+
+        tollref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                tollList.clear();
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    Toll toll= postSnapshot.getValue(Toll.class);
+                    tollList.add(toll);
+                    tollArrayAdapter.notifyDataSetChanged();
+
+                    Toast.makeText(Home.this, tollList.toString()+Integer.toString(tollList.size()), Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
 
 

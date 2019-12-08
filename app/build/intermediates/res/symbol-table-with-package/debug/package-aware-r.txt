@@ -1225,13 +1225,18 @@ drawable user
 drawable userphoto
 font alfa_slab_one
 id ALT
+id AddToll
+id Bus_Truck_price
 id CTRL
 id CW270
 id CW90
 id FUNCTION
+id Lmv_price
 id META
+id Multiaxle_price
 id SHIFT
 id SYM
+id TollName
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1289,6 +1294,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id adminlayout
 id alertTitle
 id all
 id always
@@ -1301,7 +1307,6 @@ id autoFillerHelperHeader
 id auto_fill_head
 id balanceId
 id barrier
-id bbId
 id beginning
 id blocking
 id bottom
@@ -1385,7 +1390,6 @@ id gone
 id group_divider
 id groups
 id guideline
-id hanifId
 id header
 id headerContainer
 id historyCardViewId
@@ -1404,9 +1408,9 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id jbId
 id labeled
 id largeLabel
+id lat
 id layout_netbanking
 id left
 id leftTravelHelperView
@@ -1416,7 +1420,9 @@ id line3
 id listMode
 id listViewId
 id list_item
+id listview
 id ll_nb_login
+id lng
 id loginBtn
 id login_mail
 id login_password
@@ -1425,11 +1431,9 @@ id map
 id mapCardViewId
 id masked
 id media_actions
-id meghnaId
 id message
 id middle
 id mini
-id mohasId
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply

@@ -4,73 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00985f"
-    tools:context=".Activities.TolllistActivity">
+    android:background="@drawable/background2"
+    tools:context=".Activities.SigninActivity">
 
-    <TextView
-        android:id="@+id/hanifId"
-        android:layout_width="297dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="60dp"
-        android:textColor="#FFFFFF"
-        android:text=">>Mayor Hanif flyover"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/jbId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
-
-    <TextView
-        android:id="@+id/jbId"
-        android:layout_width="311dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="60dp"
-        android:text=">>Japan-Bangladesh Bridge"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/bbId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/bbId"
-        android:layout_width="272dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="60dp"
-        android:text=">>Bangabandhu Bridge"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/meghnaId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/meghnaId"
-        android:layout_width="208dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="60dp"
-        android:text=">>Meghna Bridge"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/mohasId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/mohasId"
-        android:layout_width="248dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="92dp"
-        android:text=">>Mohashkhali Bridge"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="412dp"
+        android:layout_height="349dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="231dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="DigiTolling"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/adminlayout"
+        android:layout_width="406dp"
+        android:layout_height="197dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/TollName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Enter name of the Toll to be added"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/Lmv_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Enter Toll price for LMV"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/Bus_Truck_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Enter Toll price for Bus/Truck"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/Multiaxle_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Enter Toll price for Multiaxle's"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Enter Latitude of Toll"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/lng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Enter Longitude of Toll"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/AddToll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addtoll"
+                    android:text="Add Toll" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

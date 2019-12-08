@@ -1,5 +1,6 @@
 package com.example.digitaltolling.Activities;
 
+import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.FragmentActivity;
 
@@ -19,10 +20,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Toast;
 
+import com.example.digitaltolling.Models.Toll;
 import com.example.digitaltolling.R;
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
@@ -42,9 +45,11 @@ import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -53,8 +58,10 @@ import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GeoQueryEventListener {
 
@@ -64,8 +71,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private FusedLocationProviderClient fusedLocationProviderClient;
     private Marker currentuser;
     private DatabaseReference myLocationRef;
+    private DatabaseReference tollref;
     private GeoFire geoFire;
     private List<LatLng> tolls = new ArrayList<>();
+    private FirebaseDatabase firebaseDatabase;
+    public static List<Toll> tollList=new ArrayList<>();
+    HashSet<Toll> tollHashSet=new HashSet<>();
+    public List<Toll> distinctlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,13 +114,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void initarea() {
-        tolls.add(new LatLng(19.043492, 72.824657));
-        tolls.add(new LatLng(19.064475, 72.980455));
-        tolls.add(new LatLng(19.153421, 72.965696));
-        tolls.add(new LatLng(18.973882, 72.845407));
-        tolls.add(new LatLng(19.310341, 72.976591));
-        tolls.add(new LatLng(19.257073, 72.871275));
 
+
+
+
+
+
+/**
+        tolls.add(new LatLng(19.043492, 72.824657));//bandra worli
+        tolls.add(new LatLng(19.064475, 72.980455));//vashi toll
+        tolls.add(new LatLng(19.153421, 72.965696));//airoli toll booth
+        tolls.add(new LatLng(18.973882, 72.845407));//bpt toll
+        tolls.add(new LatLng(19.310341, 72.976591));//malodi toll
+        tolls.add(new LatLng(19.257073, 72.871275));//dahisar toll
+        tolls.add(new LatLng(19.169120, 72.966792));//mulund toll
+        tolls.add(new LatLng(19.184985, 72.955259));//lsb road thane mulund toll
+
+**/
 
     }
 
@@ -234,6 +256,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         //ADD CIRCLE TO Toll AREA
 
+        distinctlist=tollList.stream().distinct().collect(Collectors.<Toll>toList());
+
+        for (Toll t :distinctlist
+             ) {
+            tolls.add(new LatLng(Double.parseDouble(t.getLat()),Double.parseDouble(t.getLng())));
+
+        }
         for (LatLng l :
                 tolls) {
             Toast.makeText(this, "r u even here", Toast.LENGTH_LONG).show();
