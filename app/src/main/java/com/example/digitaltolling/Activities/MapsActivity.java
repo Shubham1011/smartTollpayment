@@ -25,7 +25,9 @@ import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Toast;
 
+import com.example.digitaltolling.Models.Record;
 import com.example.digitaltolling.Models.Toll;
+import com.example.digitaltolling.Models.Users;
 import com.example.digitaltolling.R;
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
@@ -45,6 +47,8 @@ import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -71,6 +75,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private FusedLocationProviderClient fusedLocationProviderClient;
     private Marker currentuser;
     private DatabaseReference myLocationRef;
+    private DatabaseReference userReference;
+    private DatabaseReference vehicleref;
     private DatabaseReference tollref;
     private GeoFire geoFire;
     private List<LatLng> tolls = new ArrayList<>();
@@ -78,12 +84,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public static List<Toll> tollList=new ArrayList<>();
     HashSet<Toll> tollHashSet=new HashSet<>();
     public List<Toll> distinctlist;
+    private Vehicle vehicle;
+    private Users users;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-
+        getuserandcar();
         Dexter.withActivity(this)
                 .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new PermissionListener() {
@@ -103,7 +111,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     @Override
                     public void onPermissionDenied(PermissionDeniedResponse response) {
-                        Toast.makeText(getApplicationContext(), "Need it  bitch", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Need your location to function properly! Please reinstall the application", Toast.LENGTH_LONG).show();
                     }
 
                     @Override
@@ -111,6 +119,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     }
                 }).check();
+    }
+
+    private void getuserandcar() {
+        FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
+
+        userReference=FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid());
+        userReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                 users=dataSnapshot.getValue(Users.class);
+                Toast.makeText(getApplicationContext(),users.getEmail(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                Toast.makeText(MapsActivity.this, "Please check your internet connection!!", Toast.LENGTH_SHORT).show();
+            }
+        });
+      vehicleref=FirebaseDatabase.getInstance().getReference().child("vehicles").child(user.getUid());
+        vehicleref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                 vehicle=dataSnapshot.getValue(Vehicle.class);
+                Toast.makeText(MapsActivity.this, vehicle.getVehicleName(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(MapsActivity.this, "Please check your internet connection!!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
     }
 
     private void initarea() {
@@ -169,35 +212,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
-    public static void animateMarker(final Location destination, final Marker marker) {
-        if (marker != null) {
-            final LatLng startPosition = marker.getPosition();
-            final LatLng endPosition = new LatLng(destination.getLatitude(), destination.getLongitude());
 
-            final float startRotation = marker.getRotation();
-
-            final LatLngInterpolator latLngInterpolator = new LatLngInterpolator.LinearFixed();
-
-
-            ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, 1);
-            valueAnimator.setDuration(1000); // duration 1 second
-            valueAnimator.setInterpolator(new LinearInterpolator());
-            valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                @Override public void onAnimationUpdate(ValueAnimator animation) {
-                    try {
-                        float v = animation.getAnimatedFraction();
-                        LatLng newPosition = latLngInterpolator.interpolate(v, startPosition, endPosition);
-                        marker.setPosition(newPosition);
-                        marker.setRotation(computeRotation(v, startRotation, destination.getBearing()));
-                    } catch (Exception ex) {
-                        // I don't care atm..
-                    }
-                }
-            });
-
-            valueAnimator.start();
-        }
-    }
     private static float computeRotation(float fraction, float start, float end) {
         float normalizeEnd = end - start; // rotate start to 0
         float normalizedEndAbs = (normalizeEnd + 360) % 360;
@@ -213,23 +228,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         float result = fraction * rotation + start;
         return (result + 360) % 360;
     }
-    private interface LatLngInterpolator {
-        LatLng interpolate(float fraction, LatLng a, LatLng b);
 
-        class LinearFixed implements LatLngInterpolator {
-            @Override
-            public LatLng interpolate(float fraction, LatLng a, LatLng b) {
-                double lat = (b.latitude - a.latitude) * fraction + a.latitude;
-                double lngDelta = b.longitude - a.longitude;
-                // Take the shortest path across the 180th meridian.
-                if (Math.abs(lngDelta) > 180) {
-                    lngDelta -= Math.signum(lngDelta) * 360;
-                }
-                double lng = lngDelta * fraction + a.longitude;
-                return new LatLng(lat, lng);
-            }
-        }
-    }
 
 
     private void buildlocationrequest() {
@@ -237,6 +236,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         locationRequest.setInterval(1);
         locationRequest.setFastestInterval(1);
+        locationRequest.setSmallestDisplacement(10f);
 
 
     }
@@ -265,7 +265,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         for (LatLng l :
                 tolls) {
-            Toast.makeText(this, "r u even here", Toast.LENGTH_LONG).show();
+
             mMap.addCircle(new CircleOptions().center(l).radius(100)
                     .strokeColor(Color.BLUE).strokeWidth(5.0f).fillColor(Color.TRANSPARENT));
 
@@ -287,8 +287,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onKeyEntered(String key, GeoLocation location) {
-        sendnotofication("Welcome to the Toll , probably near the Toll", String.format("%s is the cost of the toll for your vehicle type \n " +
-                "sit back while we make the transaction hassle free for you", key));
+
+        String vehicletype;
+        if (vehicle.getId().equals("1"))
+            vehicletype="LMV/Car";
+        if(vehicle.getId().equals("2"))
+            vehicletype="Bus/Truck";
+        else
+            vehicletype="Multiaxle";
+
+        sendnotofication(users.getName()+",you have a Toll coming up!!!", String.format("%s %s", key,location));
     }
 
     @Override

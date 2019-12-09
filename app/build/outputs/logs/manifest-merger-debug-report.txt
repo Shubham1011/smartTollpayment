@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
 MERGED from [com.karumi:dexter:6.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\c455aed280482af5df50f02b915224a5\dexter-6.0.0\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\42dfa75dd97f65b6f13ab377026b4c61\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\76d842132af7968566a4ff24cc42d136\jetified-verticalseekbar-0.7.2\AndroidManifest.xml:17:1-27:12
@@ -74,20 +74,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Shubham\.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\bc54237dd241608a60f3e5f1afb0cd23\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\71b619f01309f419ed6b9a79fb62df67\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\b9b77a85ff0c45528c42be6978bfc407\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
 		INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-82:12
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:1-83:12
 		INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:2:11-69
@@ -159,10 +159,6 @@ uses-feature#android.hardware.camera
 ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:17:5-60
 	android:name
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:17:19-57
-uses-permission#android.permission.CAMERA
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:20:5-65
-	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:20:22-62
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:21:5-80
 MERGED from [com.paytm:pgplussdk:1.4.4] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\fbcc722bcfc9dfc72016d4f526bbfa47\jetified-pgplussdk-1.4.4\AndroidManifest.xml:11:5-80
@@ -182,7 +178,7 @@ ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verificatio
 	android:name
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:24:15-53
 application
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:25:5-80:19
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:26:5-81:19
 MERGED from [com.karumi:dexter:6.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\c455aed280482af5df50f02b915224a5\dexter-6.0.0\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\c455aed280482af5df50f02b915224a5\dexter-6.0.0\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\42dfa75dd97f65b6f13ab377026b4c61\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -252,105 +248,105 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Sh
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Shubham\.gradle\caches\transforms-2\files-2.1\e91594602c73eba9f0c6fb1745d43dba\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:30:9-35
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:31:9-35
 	android:label
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:28:9-41
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:29:9-41
 	android:roundIcon
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:29:9-52
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:30:9-52
 	android:icon
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:27:9-47
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:28:9-47
 	android:allowBackup
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:26:9-35
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:27:9-35
 	android:theme
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:31:9-40
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:32:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:41:9-43:55
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:42:9-44:55
 	android:value
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:43:13-52
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:44:13-52
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:42:13-58
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:43:13-58
 meta-data#preloaded_fonts
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:44:9-46:57
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:45:9-47:57
 	android:resource
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:46:13-54
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:47:13-54
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:45:13-43
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:46:13-43
 activity#com.example.digitaltolling.Activities.MapsActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:48:9-50:59
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:49:9-51:59
 	android:label
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:49:13-52
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:50:13-52
 activity#com.example.digitaltolling.Activities.SignUpActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:51:9-63
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:52:9-63
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:51:19-60
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:52:19-60
 activity#com.example.digitaltolling.Activities.HistoryActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:52:9-54:39
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:53:9-55:39
 	android:label
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:54:13-36
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:53:13-55
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:54:13-55
 activity#com.example.digitaltolling.Activities.TolllistActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:55:9-58:20
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:56:9-59:20
 	android:windowSoftInputMode
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:56:13-56
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:57:13-56
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:55:19-62
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:56:19-62
 activity#com.example.digitaltolling.Activities.PaymentActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:59:9-64
-	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:59:19-61
-activity#com.example.digitaltolling.Activities.ScannerActivity
 ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:60:9-64
 	android:name
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:60:19-61
+activity#com.example.digitaltolling.Activities.ScannerActivity
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:61:9-64
+	android:name
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:61:19-61
 activity#com.example.digitaltolling.Activities.VehicleregActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:61:9-67
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:62:9-67
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:61:19-64
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:62:19-64
 activity#com.example.digitaltolling.Activities.CodeActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:62:9-61
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:63:9-61
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:62:19-58
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:63:19-58
 activity#com.example.digitaltolling.Activities.PhonenumActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:63:9-65
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:64:9-65
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:63:19-62
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:64:19-62
 activity#com.example.digitaltolling.Activities.LoginActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:64:9-62
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:65:9-62
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:64:19-59
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:65:19-59
 activity#com.example.digitaltolling.Activities.Home
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:65:9-68:59
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:66:9-69:59
 	android:label
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:67:13-56
-	android:theme
 		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:68:13-56
+	android:theme
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:69:13-56
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:66:13-44
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:67:13-44
 activity#com.example.digitaltolling.Activities.RegisterActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:69:9-65
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:70:9-65
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:69:19-62
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:70:19-62
 activity#com.example.digitaltolling.Activities.HomeActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:70:9-61
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:71:9-61
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:70:19-58
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:71:19-58
 activity#com.example.digitaltolling.Activities.SigninActivity
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:72:9-78:20
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:73:9-79:20
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:72:19-60
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:73:19-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:73:13-77:29
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:74:13-78:29
 action#android.intent.action.MAIN
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:74:17-69
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:75:17-69
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:74:25-66
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:75:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:76:17-77
+ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:77:17-77
 	android:name
-		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:76:27-74
+		ADDED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml:77:27-74
 uses-sdk
 INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android\android\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\smarttollpay\app\src\main\AndroidManifest.xml

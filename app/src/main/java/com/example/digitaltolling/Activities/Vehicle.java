@@ -5,16 +5,27 @@ public class Vehicle {
     private String vehicleName;
     private String plateNo;
     private String vehicleColor;
+    private String url;
     private String id;
 
     public Vehicle() {
     }
 
-    public Vehicle(String vehicleName, String plateNo, String vehicleColor, String id) {
+    public Vehicle(String vehicleName, String plateNo, String vehicleColor, String id,String url) {
         this.vehicleName = vehicleName;
         this.plateNo = plateNo;
         this.vehicleColor = vehicleColor;
-        this.id = id;
+        this.id=id;
+        this.url=url;
+
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getVehicleName() {

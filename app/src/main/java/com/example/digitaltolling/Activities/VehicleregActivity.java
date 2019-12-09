@@ -53,7 +53,7 @@ public class VehicleregActivity extends AppCompatActivity {
    private Spinner spinnerType;
    private Button vehicleRegBtn;
    DatabaseReference databaseReference;
-
+private String downloadurl;
 
 
     @Override
@@ -107,7 +107,7 @@ public class VehicleregActivity extends AppCompatActivity {
             Toast.makeText(this, image.toString(), Toast.LENGTH_SHORT).show();
             final String userUid = FirebaseAuth.getInstance().getCurrentUser().getUid();
             Log.wtf("UserID",userUid);
-            StorageReference mStorage = FirebaseStorage.getInstance().getReference().child(userUid).child("uservehicleimage");
+            final StorageReference mStorage = FirebaseStorage.getInstance().getReference().child(userUid).child("uservehicleimage");
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             image.compress(Bitmap.CompressFormat.JPEG, 100, baos);
             byte[] d = baos.toByteArray();
@@ -120,8 +120,14 @@ public class VehicleregActivity extends AppCompatActivity {
             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    Uri imageurl=taskSnapshot.getUploadSessionUri();
-                    Toast.makeText(VehicleregActivity.this, imageurl.toString(), Toast.LENGTH_SHORT).show();
+                    mStorage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            downloadurl=uri.toString();
+                            Toast.makeText(VehicleregActivity.this, downloadurl, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
                 }
             });
         }
@@ -137,10 +143,10 @@ public class VehicleregActivity extends AppCompatActivity {
 
         String id = VehicleType.vehicleId[spinnerType.getSelectedItemPosition()];
         final  String userUid = FirebaseAuth.getInstance().getUid();
-        String key = databaseReference.push().getKey();
 
-        Vehicle vehicle = new Vehicle(vehName,plateNum,color,id);
-        databaseReference.child(userUid).child(key).setValue(vehicle);
+
+        Vehicle vehicle = new Vehicle(vehName,plateNum,color,id,downloadurl);
+        databaseReference.child(userUid).setValue(vehicle);
         Toast.makeText(getApplicationContext(),"Vehicle Registered Successfully",Toast.LENGTH_LONG).show();
         updateUI();
 
