@@ -69,6 +69,7 @@ import java.util.stream.Collectors;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GeoQueryEventListener {
 
+    private List<Toll> storedtolls=new ArrayList<>();
     private GoogleMap mMap;
     private LocationRequest locationRequest;
     private LocationCallback locationCallback;
@@ -139,11 +140,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
       vehicleref=FirebaseDatabase.getInstance().getReference().child("vehicles").child(user.getUid());
+      tollref=FirebaseDatabase.getInstance().getReference().child("Toll");
         vehicleref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                  vehicle=dataSnapshot.getValue(Vehicle.class);
-                Toast.makeText(MapsActivity.this, vehicle.getVehicleName(), Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -151,7 +153,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Toast.makeText(MapsActivity.this, "Please check your internet connection!!", Toast.LENGTH_SHORT).show();
             }
         });
+        tollref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                storedtolls.clear();
+                for(DataSnapshot toll:dataSnapshot.getChildren())
+                {
+                    storedtolls.add(toll.getValue(Toll.class));
+                }
+                Toast.makeText(MapsActivity.this,storedtolls.toString(), Toast.LENGTH_SHORT).show();
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
 
     }
@@ -213,21 +230,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-    private static float computeRotation(float fraction, float start, float end) {
-        float normalizeEnd = end - start; // rotate start to 0
-        float normalizedEndAbs = (normalizeEnd + 360) % 360;
-
-        float direction = (normalizedEndAbs > 180) ? -1 : 1; // -1 = anticlockwise, 1 = clockwise
-        float rotation;
-        if (direction > 0) {
-            rotation = normalizedEndAbs;
-        } else {
-            rotation = normalizedEndAbs - 360;
-        }
-
-        float result = fraction * rotation + start;
-        return (result + 360) % 360;
-    }
 
 
 
@@ -295,10 +297,58 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             vehicletype="Bus/Truck";
         else
             vehicletype="Multiaxle";
+        Toast.makeText(this, location.toString(), Toast.LENGTH_SHORT).show();
+        Toll nearresttoll=getnearesttoll(location,storedtolls);
 
-        sendnotofication(users.getName()+",you have a Toll coming up!!!", String.format("%s %s", key,location));
+
+
+        sendnotofication(users.getName()+",you have a Toll coming up!!!",nearresttoll.getTollName());
     }
 
+    private Toll getnearesttoll(GeoLocation location, List<Toll> storedtolls) {
+      Double sdist=999999.0;
+      Double newdist=0.0;
+      Toll nearesttoll=new Toll();
+        Log.i("HERE","out");
+      for(Toll t:storedtolls)
+      {newdist=meterDistanceBetweenPoints(
+              location.latitude,
+              location.longitude,
+              Double.parseDouble(t.getLat()),
+              Double.parseDouble(t.getLng()));
+          Log.i("newdis",newdist.toString());
+          Log.i("sdist",sdist.toString());
+          Integer ans=newdist.compareTo(sdist);
+          Log.i("ans",ans.toString());
+          if(ans==1)
+          {continue;}
+          if(ans==-1)
+          {
+              nearesttoll=t;
+              sdist=newdist;
+
+          }
+
+      }
+
+
+        return nearesttoll;
+    }
+    private double meterDistanceBetweenPoints(double lat_a, double lng_a, double lat_b, double lng_b) {
+        float pk = (float) (180.f / Math.PI);
+
+        double a1 = lat_a / pk;
+        double a2 = lng_a / pk;
+        double b1 = lat_b / pk;
+        double b2 = lng_b / pk;
+
+        double t1 = Math.cos(a1) * Math.cos(a2) * Math.cos(b1) * Math.cos(b2);
+        double t2 = Math.cos(a1) * Math.sin(a2) * Math.cos(b1) * Math.sin(b2);
+        double t3 = Math.sin(a1) * Math.sin(b1);
+        double tt = Math.acos(t1 + t2 + t3);
+
+        return 6366000 * tt;
+    }
     @Override
     public void onKeyExited(String key) {
         sendnotofication("Happy Journey", String.format("%s has been deducted from your account", key));
@@ -331,6 +381,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onKeyMoved(String key, GeoLocation location) {
+
+
 
     }
 
