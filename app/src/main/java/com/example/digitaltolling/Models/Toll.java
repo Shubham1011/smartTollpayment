@@ -13,6 +13,7 @@ public class Toll {
     private String Bus_Truck_price;
     private String Multiaxle_price;
 
+
     @NonNull
     @Override
     public String toString() {
@@ -24,12 +25,13 @@ public class Toll {
     }
     public Toll( String tollName, String lat, String lng, String lmv_price, String bus_Truck_price, String multiaxle_price) {
 
-        TollName = tollName;
+       this.TollName = tollName;
         this.lat = lat;
         this.lng = lng;
-        Lmv_price = lmv_price;
-        Bus_Truck_price = bus_Truck_price;
-        Multiaxle_price = multiaxle_price;
+        this.Lmv_price = lmv_price;
+        this.Bus_Truck_price = bus_Truck_price;
+        this.Multiaxle_price = multiaxle_price;
+
     }
 
     @Override
@@ -41,6 +43,7 @@ public class Toll {
         if (this.TollName != that.TollName) return false;
         return true;
     }
+
 
     public String getTollName() {
         return TollName;

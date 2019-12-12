@@ -3,130 +3,97 @@ package com.example.digitaltolling.Activities;
 import android.app.Activity;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.digitaltolling.Models.Payment;
+import com.example.digitaltolling.Models.Record;
 import com.example.digitaltolling.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class CustomAdapter extends ArrayAdapter<Payment> {
+public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+
+    private ArrayList<Record> dataSet;
+
+private static  DatabaseReference databaseReference;
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
 
-    private Activity context;
-    private List<Payment> paymentlist;
 
-    public CustomAdapter( Activity context,List<Payment> paymentlist) {
-        super(context, R.layout.sample_layout, paymentlist);
-        this.context = context;
-        this.paymentlist = paymentlist;
+        TextView textViewName;
+        TextView textViewVersion;
+        ImageView imageViewIcon;
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            this.textViewName = (TextView) itemView.findViewById(R.id.textView3);
+            this.textViewVersion = (TextView) itemView.findViewById(R.id.textView5);
+
+        }
     }
 
-    @NonNull
+    public CustomAdapter(final  ArrayList<Record> data) {
+        databaseReference=FirebaseDatabase.getInstance().getReference().child("record");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+           data.clear();
+           for(DataSnapshot s:dataSnapshot.getChildren())
+           {
+               Record r=s.getValue(Record.class);
+               data.add(r);
+           }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        this.dataSet=data;
+    }
+
+            @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent,
+                                           int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.items, parent, false);
+
+        view.setOnClickListener(HistoryActivity.myOnClickListener);
+
+        MyViewHolder myViewHolder = new MyViewHolder(view);
+        return myViewHolder;
+    }
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public void onBindViewHolder(final MyViewHolder holder, final int listPosition) {
 
-        LayoutInflater layoutInflater = context.getLayoutInflater();
-        View view = layoutInflater.inflate(R.layout.sample_layout,null,true);
+        TextView textViewName = holder.textViewName;
+        TextView textViewVersion = holder.textViewVersion;
+        ImageView imageView = holder.imageViewIcon;
 
-        Payment payment = paymentlist.get(position);
+        textViewName.setText(dataSet.get(listPosition).getTollname());
+        textViewVersion.setText(dataSet.get(listPosition).getUsername());
 
-        TextView t1 = view.findViewById(R.id.vehicleNameId);
-        TextView t2 = view.findViewById(R.id.plateNoId);
-        TextView t3 = view.findViewById(R.id.vehicleTypeId);
-        TextView t4 = view.findViewById(R.id.paidBillId);
-        TextView t5 = view.findViewById(R.id.paymentKey);
-        TextView t6 = view.findViewById(R.id.paymentTime);
-        TextView t7 = view.findViewById(R.id.paymentDate);
+    }
 
-        t1.setText("Vehicle Name: "+payment.getVehicleName());
-        t2.setText("PlateNo. "+payment.getPlateNo());
-        if(payment.getVehicleID().equals("1")){
-            t3.setText("Type: Bike");
-        }
-        else if (payment.getVehicleID().equals("2")){
-
-            t3.setText("Type: Auto Rickshaw");
-        }
-        else if (payment.getVehicleID().equals("3")){
-
-            t3.setText("Type: Car");
-        }
-        else if (payment.getVehicleID().equals("4")){
-
-            t3.setText("Type: SUV");
-        }
-        else if (payment.getVehicleID().equals("5")){
-
-            t3.setText("Type: Microbus");
-        }
-        else if (payment.getVehicleID().equals("6")){
-
-            t3.setText("Type: Pickup");
-        }
-        else if (payment.getVehicleID().equals("7")){
-
-            t3.setText("Type: Minibus");
-        }
-        else if (payment.getVehicleID().equals("8")){
-
-            t3.setText("Type: Bus");
-        }
-        else if (payment.getVehicleID().equals("9")){
-
-            t3.setText("Type: Small truck");
-        }
-        else if (payment.getVehicleID().equals("10")){
-
-            t3.setText("Type: Truck");
-        }
-        else{
-
-            t3.setText("Type: Lorries");
-        }
-
-        if(payment.getVehicleID().equals("1")){
-            t4.setText("Bill: 10 Taka");
-        }
-        else if(payment.getVehicleID().equals("2")){
-            t4.setText("Bill: 18 Taka");
-        }
-        else if(payment.getVehicleID().equals("3")){
-            t4.setText("Bill: 60 Taka");
-        }
-        else if(payment.getVehicleID().equals("4")){
-            t4.setText("Bill: 70 Taka");
-        }
-        else if(payment.getVehicleID().equals("5")){
-            t4.setText("Bill: 85 Taka");
-        }
-        else if(payment.getVehicleID().equals("6")){
-            t4.setText("Bill: 130 Taka");
-        }
-        else if(payment.getVehicleID().equals("7")){
-            t4.setText("Bill: 173 Taka");
-        }
-        else if(payment.getVehicleID().equals("8")){
-            t4.setText("Bill: 260 Taka");
-        }
-        else if(payment.getVehicleID().equals("9")){
-            t4.setText("Bill: 173 Taka");
-        }
-        else if(payment.getVehicleID().equals("10")){
-            t4.setText("Bill: 260 Taka");
-        }
-        else{
-            t4.setText("Bill: 345 Taka");
-        }
-        t5.setText("Transection ID: "+payment.getKey());
-        t6.setText(payment.getTime());
-        t7.setText(payment.getDate());
-
-        return view;
+    @Override
+    public int getItemCount() {
+        return dataSet.size();
     }
 }
+

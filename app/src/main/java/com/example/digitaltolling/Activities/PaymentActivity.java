@@ -19,6 +19,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.digitaltolling.Models.Payment;
+import com.example.digitaltolling.Models.Record;
 import com.example.digitaltolling.Models.Users;
 import com.example.digitaltolling.R;
 import com.google.firebase.FirebaseApp;
@@ -76,11 +77,6 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         ref=FirebaseDatabase.getInstance().getReference();
 
 
-        // Set up the Editor before calling into the realtime database.
-        //FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://digitaltoll.firebaseio.com/");
-
-        // Get the root reference location of the database.
-        //DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
 
 
     }

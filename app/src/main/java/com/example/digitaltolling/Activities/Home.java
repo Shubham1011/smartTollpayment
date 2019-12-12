@@ -74,7 +74,7 @@ public class Home extends AppCompatActivity
                     tollList.add(toll);
                     tollArrayAdapter.notifyDataSetChanged();
 
-                    Toast.makeText(Home.this, tollList.toString()+Integer.toString(tollList.size()), Toast.LENGTH_SHORT).show();
+
 
                 }
             }

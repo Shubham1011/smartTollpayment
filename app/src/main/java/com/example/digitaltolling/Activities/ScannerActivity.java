@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -55,33 +56,8 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
             }
         }
 
-        final String userUid = FirebaseAuth.getInstance().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference("vehicles").child(userUid);
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot snap: dataSnapshot.getChildren()){
-                    databaseReference = FirebaseDatabase.getInstance().getReference("vehicles").child(userUid).child(snap.getKey()).child("id");
-                    databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            ID =(String)dataSnapshot.getValue();
-                        }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        }
-                    });
-                }
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
     }
 

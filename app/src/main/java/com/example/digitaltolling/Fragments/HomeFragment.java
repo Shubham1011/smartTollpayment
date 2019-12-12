@@ -25,6 +25,7 @@ import com.example.digitaltolling.Activities.MapsActivity;
 import com.example.digitaltolling.Activities.PaymentActivity;
 import com.example.digitaltolling.Activities.ScannerActivity;
 import com.example.digitaltolling.Activities.TolllistActivity;
+import com.example.digitaltolling.Activities.Vehicle;
 import com.example.digitaltolling.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -47,7 +48,7 @@ public class HomeFragment extends Fragment {
     private CardView scannerCardView,tolllistCardView,historyCardView,profileCardView,mapCardViewId,paymentCardViewId;
     public static FragmentManager fragmentManager;
 
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReference,vehicleref;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
     TextView paymenttext;
@@ -56,7 +57,7 @@ public class HomeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+private int minbal;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -110,11 +111,29 @@ public class HomeFragment extends Fragment {
         databaseReference=FirebaseDatabase.getInstance().getReference();
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
+        vehicleref=FirebaseDatabase.getInstance().getReference().child("vehicles").child(firebaseUser.getUid());
+        vehicleref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Vehicle v =dataSnapshot.getValue(Vehicle.class);
+                if(v.getId().equals("1"))
+                    minbal=45;
+                if(v.getId().equals("2"))
+                    minbal=90;
+                else minbal=115;
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(getContext(), "Check your internet connection", Toast.LENGTH_SHORT).show();
+            }
+        });
         databaseReference.child("Users").child(firebaseUser.getUid()).child("balance").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 final int value=Integer.parseInt(dataSnapshot.getValue().toString());
-                if(value>100)
+
+                if(value>minbal)
                 {
 
                     paymentCardViewId.setEnabled(false);
@@ -146,7 +165,9 @@ public class HomeFragment extends Fragment {
                             TextView text = (TextView) view.findViewById(android.R.id.message);
                             text.setTextColor(Color.WHITE);
                             text.setGravity(Gravity.CENTER);
-                        toast.show();}
+                        toast.show();
+                        }
+
 
                     }.start();
 

@@ -1418,8 +1418,8 @@ id leftTravelHelperView
 id light
 id line1
 id line3
+id linearLayout
 id listMode
-id listViewId
 id list_item
 id listview
 id ll_nb_login
@@ -1494,9 +1494,11 @@ id radioOption1
 id radioOption2
 id radio_button1
 id radio_button2
+id recyclerview
 id regUserPhoto
 id regVehiclePhoto
 id registerButton
+id relativelayout
 id rh_bt_submit
 id right
 id rightTravelHelperView
@@ -1569,7 +1571,9 @@ id textView2
 id textView25
 id textView26
 id textView27
+id textView3
 id textView4
+id textView5
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1706,6 +1710,7 @@ layout easypay_travel_browser_fragment
 layout fragment_home
 layout fragment_profile
 layout fragment_settings
+layout items
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_home

@@ -10,6 +10,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -17,12 +18,16 @@ import android.graphics.Point;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.digitaltolling.Models.Record;
@@ -67,6 +72,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+import static com.paytm.pgsdk.easypay.manager.PaytmAssist.getContext;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GeoQueryEventListener {
 
     private List<Toll> storedtolls=new ArrayList<>();
@@ -76,7 +83,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private FusedLocationProviderClient fusedLocationProviderClient;
     private Marker currentuser;
     private DatabaseReference myLocationRef;
-    private DatabaseReference userReference;
+    private DatabaseReference userReference,recordref;
     private DatabaseReference vehicleref;
     private DatabaseReference tollref;
     private GeoFire geoFire;
@@ -87,12 +94,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public List<Toll> distinctlist;
     private Vehicle vehicle;
     private Users users;
-
+    Record record;
+    private static int journeysetter=1;
+    private Boolean tstatus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
         getuserandcar();
+        recordref=FirebaseDatabase.getInstance().getReference().child("record");
+
         Dexter.withActivity(this)
                 .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new PermissionListener() {
@@ -290,20 +302,48 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onKeyEntered(String key, GeoLocation location) {
 
-        String vehicletype;
-        if (vehicle.getId().equals("1"))
-            vehicletype="LMV/Car";
-        if(vehicle.getId().equals("2"))
-            vehicletype="Bus/Truck";
-        else
-            vehicletype="Multiaxle";
-        Toast.makeText(this, location.toString(), Toast.LENGTH_SHORT).show();
+        Log.i("CALLED","ME");
         Toll nearresttoll=getnearesttoll(location,storedtolls);
 
+        String costof;
+        String vehicletype;
+        if (vehicle.getId().equals("1")) {
+            vehicletype = "LMV/Car";
+            costof=nearresttoll.getLmv_price();
+        }
+            if(vehicle.getId().equals("2")) {
+                vehicletype = "Bus/Truck";
+                costof=nearresttoll.getBus_Truck_price();
+            }
+        else
+            vehicletype="Multiaxle";
+        costof=nearresttoll.getMultiaxle_price();
+        tstatus=Integer.parseInt(users.getBalance())<Integer.parseInt(costof);
+        sendnotofication("Good day " + users.getName() + ",you have a Toll coming up!!!", "I guess its" + nearresttoll.getTollName());
+        Log.i("this",Integer.toString(journeysetter));
+        if(!tstatus && journeysetter==1) {
+
+            record=new Record(users.getName(),vehicle.getUrl(),vehicletype,costof,nearresttoll.getTollName(),"paid");
+            journeysetter=2;
+            Log.i("this",Integer.toString(journeysetter));
+        }
+        else if(journeysetter==1)
+        {
+            Toast toast = Toast.makeText(getApplicationContext(),"Insufficient Balance for the upcoming toll" +
+                    "Please pay manually", Toast.LENGTH_SHORT);
+            View view = toast.getView();
+            view.setBackgroundColor(Color.RED);
 
 
-        sendnotofication(users.getName()+",you have a Toll coming up!!!",nearresttoll.getTollName());
-    }
+            TextView text = (TextView) view.findViewById(android.R.id.message);
+            text.setTextColor(Color.WHITE);
+            text.setGravity(Gravity.CENTER);
+            toast.show();
+            record=new Record(users.getName(),vehicle.getUrl(),vehicletype,costof,nearresttoll.getTollName(),"unpaid");
+            recordref.push().setValue(record);
+            finish();
+        }
+        }
 
     private Toll getnearesttoll(GeoLocation location, List<Toll> storedtolls) {
       Double sdist=999999.0;
@@ -351,8 +391,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
     @Override
     public void onKeyExited(String key) {
-        sendnotofication("Happy Journey", String.format("%s has been deducted from your account", key));
+
+        Log.i("CALLED","ME");
+
+        if(!tstatus && journeysetter==2) {
+            Log.i("this",Integer.toString(journeysetter));
+            recordref.push().setValue(record);
+            sendnotofication("Happy Journey", String.format("Rs %s has been deducted from your account", record.getCost()));
+            journeysetter=1;
+
+        }
+        Log.i("this",Integer.toString(journeysetter));
+
     }
+
+
 
     private void sendnotofication(String title, String content) {
         String NOTIFICATION_CHANNEL_ID = "tollnotification";
@@ -394,6 +447,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onGeoQueryError(DatabaseError error) {
+        Toast.makeText(this, "Unable to process !! Please pay manually", Toast.LENGTH_SHORT).show();
 
     }
 
