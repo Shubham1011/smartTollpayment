@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.cardview.widget.CardView;
 
 import android.os.CountDownTimer;
+import android.provider.ContactsContract;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +27,8 @@ import com.example.digitaltolling.Activities.PaymentActivity;
 import com.example.digitaltolling.Activities.ScannerActivity;
 import com.example.digitaltolling.Activities.TolllistActivity;
 import com.example.digitaltolling.Activities.Vehicle;
+import com.example.digitaltolling.Models.Record;
+import com.example.digitaltolling.Models.Users;
 import com.example.digitaltolling.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -34,6 +37,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -48,9 +54,10 @@ public class HomeFragment extends Fragment {
     private CardView scannerCardView,tolllistCardView,historyCardView,profileCardView,mapCardViewId,paymentCardViewId;
     public static FragmentManager fragmentManager;
 
-    DatabaseReference databaseReference,vehicleref;
+    DatabaseReference databaseReference,vehicleref,recordref;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
+    Users user;
     TextView paymenttext;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -101,7 +108,7 @@ private int minbal;
         // Inflate the layout for this fragment
 
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
-
+final List<Record> recordList=new ArrayList<>();
         scannerCardView = view.findViewById(R.id.scannerCardViewId);
         tolllistCardView = view.findViewById(R.id.tolllistCardViewId);
         historyCardView = view.findViewById(R.id.historyCardViewId);
@@ -111,6 +118,7 @@ private int minbal;
         databaseReference=FirebaseDatabase.getInstance().getReference();
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
+        recordref=FirebaseDatabase.getInstance().getReference().child("record").child(firebaseUser.getUid());
         vehicleref=FirebaseDatabase.getInstance().getReference().child("vehicles").child(firebaseUser.getUid());
         vehicleref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -128,10 +136,11 @@ private int minbal;
                 Toast.makeText(getContext(), "Check your internet connection", Toast.LENGTH_SHORT).show();
             }
         });
-        databaseReference.child("Users").child(firebaseUser.getUid()).child("balance").addListenerForSingleValueEvent(new ValueEventListener() {
+   databaseReference.child("Users").child(firebaseUser.getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                final int value=Integer.parseInt(dataSnapshot.getValue().toString());
+                user=dataSnapshot.getValue(Users.class);
+                final int value=Integer.parseInt(user.getBalance().toString());
 
                 if(value>minbal)
                 {
@@ -143,7 +152,7 @@ private int minbal;
                 else {
 
                     /*Here you can do anything with above textview like text.setTextColor(Color.parseColor("#000000"));*/
-                    new CountDownTimer(4000, 1000)
+                    new CountDownTimer(2000, 1000)
                     {
 
                         public void onTick(long millisUntilFinished) { final Toast toast = Toast.makeText(getContext(),"Your balance is Rs."+value+" deemed as a low balance \n " +
@@ -180,6 +189,9 @@ private int minbal;
 
             }
         });
+
+
+
 
 
         mapCardViewId=view.findViewById(R.id.mapCardViewId);

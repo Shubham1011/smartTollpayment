@@ -34,7 +34,7 @@ import static com.example.digitaltolling.Activities.MapsActivity.tollList;
 public class HistoryActivity extends AppCompatActivity {
 
     private ListView listView;
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReference,userref;
     private static RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private static RecyclerView recyclerView;
@@ -42,21 +42,48 @@ public class HistoryActivity extends AppCompatActivity {
     static View.OnClickListener myOnClickListener;
     private static ArrayList<Integer> removedItems;
     private CustomAdapter customAdapter;
-
+private Users u;
 List<Record> records=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
+userref=FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+userref.addValueEventListener(new ValueEventListener() {
+    @Override
+    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+        u=dataSnapshot.getValue(Users.class);
+    }
 
+    @Override
+    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+    }
+});
                 recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
                 recyclerView.setHasFixedSize(true);
                 layoutManager = new LinearLayoutManager(getApplicationContext());
                 recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setItemAnimator(new DefaultItemAnimator());
+        databaseReference=FirebaseDatabase.getInstance().getReference().child("record");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                data.clear();
+                for(DataSnapshot s:dataSnapshot.getChildren())
+                {
+                    Record r=s.getValue(Record.class);
+                    if(r.getUsername().equals(u.getName()))
+                    data.add(r);
+                }
+            }
 
-                Log.i("here",records.toString());
-                Log.i("here",data.toString());
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
 
                 adapter = new CustomAdapter(data);
                 recyclerView.setAdapter(adapter);
@@ -69,5 +96,5 @@ List<Record> records=new ArrayList<>();
 
         }
 
-    
+
 

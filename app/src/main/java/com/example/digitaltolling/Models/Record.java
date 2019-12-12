@@ -10,17 +10,19 @@ public class Record {
 private String username;
 private String vehicleimageurl;
 private String vehicletype;
+private String vehiclename;
 private String cost;
 private String tollname;
 private String date;
     private String status;
-    public Record(String username, String vehicleimageurl, String vehicletype, String cost,String tollname,String status) {
+    public Record(String username, String vehicleimageurl, String vehicletype, String cost,String tollname,String status,String vehiclename) {
         this.username = username;
         this.vehicleimageurl = vehicleimageurl;
         this.vehicletype = vehicletype;
         this.cost = cost;
         this.tollname=tollname;
         this.status=status;
+        this.vehiclename=vehiclename;
         SimpleDateFormat dateFormat = new SimpleDateFormat("h:mm a dd MMMM yyyy");
         dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         Date today = Calendar.getInstance().getTime();
@@ -28,6 +30,14 @@ private String date;
     }
     public Record(){
 
+    }
+
+    public String getVehiclename() {
+        return vehiclename;
+    }
+
+    public void setVehiclename(String vehiclename) {
+        this.vehiclename = vehiclename;
     }
 
     public String getDate() {

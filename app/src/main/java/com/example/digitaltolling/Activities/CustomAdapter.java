@@ -1,29 +1,37 @@
 package com.example.digitaltolling.Activities;
 
-import android.app.Activity;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.digitaltolling.Models.Payment;
+import com.bumptech.glide.Glide;
 import com.example.digitaltolling.Models.Record;
 import com.example.digitaltolling.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
@@ -36,34 +44,23 @@ private static  DatabaseReference databaseReference;
 
         TextView textViewName;
         TextView textViewVersion;
+        TextView tollname;
         ImageView imageViewIcon;
+        TextView time;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            this.textViewName = (TextView) itemView.findViewById(R.id.textView3);
-            this.textViewVersion = (TextView) itemView.findViewById(R.id.textView5);
+            this.textViewName = (TextView) itemView.findViewById(R.id.vehiclename);
+            this.textViewVersion = (TextView) itemView.findViewById(R.id.cost);
+            this.tollname=(TextView) itemView.findViewById(R.id.tollname);
+            this.time=(TextView) itemView.findViewById(R.id.time);
+            this.imageViewIcon=itemView.findViewById(R.id.imageView3);
 
         }
     }
 
     public CustomAdapter(final  ArrayList<Record> data) {
-        databaseReference=FirebaseDatabase.getInstance().getReference().child("record");
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-           data.clear();
-           for(DataSnapshot s:dataSnapshot.getChildren())
-           {
-               Record r=s.getValue(Record.class);
-               data.add(r);
-           }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
         this.dataSet=data;
     }
 
@@ -80,14 +77,32 @@ private static  DatabaseReference databaseReference;
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int listPosition) {
+    public void onBindViewHolder(final MyViewHolder holder, final int listPosition)  {
 
         TextView textViewName = holder.textViewName;
         TextView textViewVersion = holder.textViewVersion;
-        ImageView imageView = holder.imageViewIcon;
+        TextView tollname=holder.tollname;
+        TextView time=holder.time;
+        final ImageView imageView = holder.imageViewIcon;
 
-        textViewName.setText(dataSet.get(listPosition).getTollname());
-        textViewVersion.setText(dataSet.get(listPosition).getUsername());
+        textViewName.setText(dataSet.get(listPosition).getVehiclename());
+        textViewVersion.setText(dataSet.get(listPosition).getCost());
+        tollname.setText(dataSet.get(listPosition).getTollname());
+        time.setText(dataSet.get(listPosition).getDate());
+        final long ONE_MEGABYTE = 1024 * 1024;
+        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("uservehicleimage");
+        storageReference.getBytes(ONE_MEGABYTE).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+            @Override
+            public void onSuccess(byte[] bytes) {
+                Bitmap myBitmap = BitmapFactory.decodeByteArray(bytes,0,bytes.length);
+                imageView.setImageBitmap(myBitmap);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                // Handle any errors
+            }
+        });
 
     }
 

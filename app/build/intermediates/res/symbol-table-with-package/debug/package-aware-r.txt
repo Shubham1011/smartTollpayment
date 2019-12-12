@@ -1185,6 +1185,7 @@ drawable ic_show_passcode
 drawable launcher_icon
 drawable layout_progress_bg
 drawable layout_shadow
+drawable load
 drawable message
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1341,6 +1342,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id cost
 id custom
 id customPanel
 id dark
@@ -1404,6 +1406,7 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
 id img_pwd_show
 id info
 id invisible
@@ -1571,9 +1574,7 @@ id textView2
 id textView25
 id textView26
 id textView27
-id textView3
 id textView4
-id textView5
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1583,6 +1584,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id tolllistCardViewId
+id tollname
 id toolbar
 id top
 id topPanel
@@ -1608,6 +1610,7 @@ id user_image
 id vehicleNameId
 id vehicleRegisterButton
 id vehicleTypeId
+id vehiclename
 id view_offset_helper
 id visible
 id webView1

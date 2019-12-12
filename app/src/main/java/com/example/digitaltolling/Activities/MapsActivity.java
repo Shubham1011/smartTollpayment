@@ -75,9 +75,10 @@ import java.util.stream.Collectors;
 import static com.paytm.pgsdk.easypay.manager.PaytmAssist.getContext;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GeoQueryEventListener {
-
+    NotificationChannel notificationChannel;
     private List<Toll> storedtolls=new ArrayList<>();
     private GoogleMap mMap;
+    NotificationManager notificationManager;
     private LocationRequest locationRequest;
     private LocationCallback locationCallback;
     private FusedLocationProviderClient fusedLocationProviderClient;
@@ -218,6 +219,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onLocationResult(final LocationResult locationResult) {
                 if (mMap != null) {
+
                     geoFire.setLocation("you", new GeoLocation(locationResult.getLastLocation().getLatitude()
                             , locationResult.getLastLocation().getLongitude()), new GeoFire.CompletionListener() {
                         @Override
@@ -301,7 +303,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onKeyEntered(String key, GeoLocation location) {
-
+;
         Log.i("CALLED","ME");
         Toll nearresttoll=getnearesttoll(location,storedtolls);
 
@@ -323,26 +325,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.i("this",Integer.toString(journeysetter));
         if(!tstatus && journeysetter==1) {
 
-            record=new Record(users.getName(),vehicle.getUrl(),vehicletype,costof,nearresttoll.getTollName(),"paid");
+            record=new Record(users.getName(),vehicle.getUrl(),vehicletype,costof,nearresttoll.getTollName(),"paid",vehicle.getVehicleName());
             journeysetter=2;
             Log.i("this",Integer.toString(journeysetter));
         }
-        else if(journeysetter==1)
-        {
-            Toast toast = Toast.makeText(getApplicationContext(),"Insufficient Balance for the upcoming toll" +
-                    "Please pay manually", Toast.LENGTH_SHORT);
-            View view = toast.getView();
-            view.setBackgroundColor(Color.RED);
 
-
-            TextView text = (TextView) view.findViewById(android.R.id.message);
-            text.setTextColor(Color.WHITE);
-            text.setGravity(Gravity.CENTER);
-            toast.show();
-            record=new Record(users.getName(),vehicle.getUrl(),vehicletype,costof,nearresttoll.getTollName(),"unpaid");
-            recordref.push().setValue(record);
-            finish();
-        }
         }
 
     private Toll getnearesttoll(GeoLocation location, List<Toll> storedtolls) {
@@ -393,12 +380,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onKeyExited(String key) {
 
         Log.i("CALLED","ME");
+        if(record.getStatus().equals("paid"))
+        {
+            int rem=Integer.parseInt(users.getBalance())-Integer.parseInt(record.getCost());
+            Toast.makeText(this, Integer.toString(rem), Toast.LENGTH_SHORT).show();
+            userReference.child("balance").setValue(Integer.toString(rem));
+        }
 
         if(!tstatus && journeysetter==2) {
             Log.i("this",Integer.toString(journeysetter));
             recordref.push().setValue(record);
             sendnotofication("Happy Journey", String.format("Rs %s has been deducted from your account", record.getCost()));
             journeysetter=1;
+
+            mMap.clear();
 
         }
         Log.i("this",Integer.toString(journeysetter));
@@ -409,10 +404,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void sendnotofication(String title, String content) {
         String NOTIFICATION_CHANNEL_ID = "tollnotification";
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+         notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) ;
         {
-            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "My Notofication",
+             notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "My Notofication",
                     NotificationManager.IMPORTANCE_DEFAULT);
             //config
             notificationChannel.setDescription("channel descp");
@@ -430,6 +425,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
         Notification notification = builder.build();
         notificationManager.notify(new Random().nextInt(), notification);
+
     }
 
     @Override

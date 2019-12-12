@@ -53,6 +53,7 @@ public class Home extends AppCompatActivity
     private ArrayAdapter<Toll> tollArrayAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
