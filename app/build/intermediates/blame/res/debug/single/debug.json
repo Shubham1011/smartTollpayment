@@ -108,6 +108,10 @@
         "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
+        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_record.png.flat",
+        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\record.png"
+    },
+    {
         "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_radio_off_to_on_mtrl_animation.xml.flat",
         "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\drawable\\btn_radio_off_to_on_mtrl_animation.xml"
     },
@@ -1004,6 +1008,10 @@
         "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addbalance.png.flat",
+        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\addbalance.png"
+    },
+    {
         "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
@@ -1162,6 +1170,10 @@
     {
         "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_journey.png.flat",
+        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\journey.png"
     },
     {
         "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",

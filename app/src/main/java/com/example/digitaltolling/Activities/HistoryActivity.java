@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,6 +43,7 @@ public class HistoryActivity extends AppCompatActivity {
     static View.OnClickListener myOnClickListener;
     private static ArrayList<Integer> removedItems;
     private CustomAdapter customAdapter;
+
 private Users u;
 List<Record> records=new ArrayList<>();
     @Override

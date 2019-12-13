@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -37,6 +38,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.nio.ByteBuffer;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -48,7 +50,7 @@ public class VehicleregActivity extends AppCompatActivity {
     static int PReqCode = 1;
     static int REQUESCODE = 1;
     Uri pickedImageUri;
-
+    Uri outputFileUri;
    private EditText vehicleName,vehiclePlateNum,vehicleColor;
    private Spinner spinnerType;
    private Button vehicleRegBtn;
@@ -86,8 +88,13 @@ private String downloadurl;
     }
 
     public void getimage(View view){
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
         Toast.makeText(this, "clicked", Toast.LENGTH_SHORT).show();
         Intent cameraintent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+         outputFileUri = Uri.fromFile(new File(getExternalCacheDir().getPath(), "pickImageResult.jpeg"));
+         CustomAdapter.uri=outputFileUri;
+        cameraintent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
         if(cameraintent.resolveActivity(getPackageManager())!=null)
         {
             startActivityForResult(cameraintent,REQUESCODE);
@@ -101,16 +108,25 @@ private String downloadurl;
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==REQUESCODE && resultCode==RESULT_OK) {
             imageVehiclePhoto=findViewById(R.id.regVehiclePhoto);
-            Bundle extras = data.getExtras();
-            Bitmap image = (Bitmap) extras.get("data");
+
+            Bitmap image=null;
+            //Bitmap image = (Bitmap) extras.get("data");
+            try {
+                image= MediaStore.Images.Media.getBitmap(this.getContentResolver(), outputFileUri);
+                CustomAdapter.bmap=image;
+            }catch (Exception e)
+            {
+            Log.i("EXCEP",e.getMessage());
+            }
             imageVehiclePhoto.setImageBitmap(image);
             Toast.makeText(this, image.toString(), Toast.LENGTH_SHORT).show();
             final String userUid = FirebaseAuth.getInstance().getCurrentUser().getUid();
             Log.wtf("UserID",userUid);
             final StorageReference mStorage = FirebaseStorage.getInstance().getReference().child(userUid).child("uservehicleimage");
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            image.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+           ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            image.compress(Bitmap.CompressFormat.JPEG, 50, baos);
             byte[] d = baos.toByteArray();
+
             UploadTask uploadTask=mStorage.putBytes(d);
             uploadTask.addOnFailureListener(new OnFailureListener() {
                 @Override

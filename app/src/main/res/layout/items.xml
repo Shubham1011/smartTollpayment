@@ -17,7 +17,8 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="484dp">
+            android:layout_height="484dp"
+            >
 
             <RelativeLayout
                 android:layout_width="394dp"

@@ -1095,6 +1095,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable action_button_bg
 drawable action_gray_button
+drawable addbalance
 drawable addvehicle
 drawable arrowbutton
 drawable avd_hide_password
@@ -1182,6 +1183,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
 drawable ic_settings_black_24dp
 drawable ic_show_passcode
+drawable journey
 drawable launcher_icon
 drawable layout_progress_bg
 drawable layout_shadow
@@ -1209,6 +1211,7 @@ drawable paytm_assist
 drawable paytm_assist_icon
 drawable paytm_assist_logo
 drawable recharge
+drawable record
 drawable reg_edittext_style
 drawable rejected
 drawable rocketlogo

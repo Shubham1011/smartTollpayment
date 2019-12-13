@@ -14,6 +14,7 @@ import androidx.cardview.widget.CardView;
 
 import android.os.CountDownTimer;
 import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,11 +65,11 @@ public class HomeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-private int minbal;
+public  int minbal;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+public  Vehicle v;
     private OnFragmentInteractionListener mListener;
 
     public HomeFragment() {
@@ -100,6 +101,33 @@ private int minbal;
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        vehicleref= FirebaseDatabase.getInstance().getReference().child("vehicles").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        vehicleref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String id=dataSnapshot.getValue(Vehicle.class).getId();
+
+                if(id.equals("1")) {minbal=45;
+                Log.i("HEHY",Integer.toString(minbal));
+                }
+                else if(id.equals("2")) {
+                    Log.i("HEHY",Integer.toString(minbal));
+                    minbal=90;
+                }
+                else {
+                    Log.i("HEHY",Integer.toString(minbal));
+                    minbal=115;
+
+                }
+                Toast.makeText(getContext(), ""+minbal+"id"+id, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 
     @Override
@@ -119,31 +147,19 @@ final List<Record> recordList=new ArrayList<>();
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
         recordref=FirebaseDatabase.getInstance().getReference().child("record").child(firebaseUser.getUid());
-        vehicleref=FirebaseDatabase.getInstance().getReference().child("vehicles").child(firebaseUser.getUid());
-        vehicleref.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Vehicle v =dataSnapshot.getValue(Vehicle.class);
-                if(v.getId().equals("1"))
-                    minbal=45;
-                if(v.getId().equals("2"))
-                    minbal=90;
-                else minbal=115;
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(getContext(), "Check your internet connection", Toast.LENGTH_SHORT).show();
-            }
-        });
+        Toast.makeText(getContext(), "oncreateciew"+Integer.toString(minbal), Toast.LENGTH_SHORT).show();
+        Log.i("minbal", Integer.toString(minbal));
    databaseReference.child("Users").child(firebaseUser.getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 user=dataSnapshot.getValue(Users.class);
                 final int value=Integer.parseInt(user.getBalance().toString());
 
+                Toast.makeText(getContext(),Integer.toString(minbal)+value, Toast.LENGTH_SHORT).show();
                 if(value>minbal)
                 {
+
 
                     paymentCardViewId.setEnabled(false);
                     paymenttext.setText("Rs."+value);
@@ -165,16 +181,7 @@ final List<Record> recordList=new ArrayList<>();
                             text.setTextColor(Color.WHITE);
                             text.setGravity(Gravity.CENTER);
                         toast.show();}
-                        public void onFinish() { final Toast toast = Toast.makeText(getContext(),"Your balance is Rs."+value+" deemed as a low balance \n " +
-                                "Please Tap  Add Balance for smooth experience", Toast.LENGTH_SHORT);
-                            View view = toast.getView();
-                            view.setBackgroundColor(Color.RED);
-
-
-                            TextView text = (TextView) view.findViewById(android.R.id.message);
-                            text.setTextColor(Color.WHITE);
-                            text.setGravity(Gravity.CENTER);
-                        toast.show();
+                        public void onFinish() {
                         }
 
 

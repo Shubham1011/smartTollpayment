@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,151 +30,128 @@
             android:layout_height="0dp">
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_margin="10dp"
                 android:id="@+id/scannerCardViewId"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30sp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:padding="10dp"
-                        android:src="@drawable/scan"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        />
+                        android:padding="10dp"
+                        android:src="@drawable/scan" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_margin="10dp"
-                        android:background="@color/cardview_dark_background"
-                        />
+                        android:background="@color/cardview_dark_background" />
+
                     <TextView
-                        android:textAppearance="?android:textAppearanceLarge"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="53dp"
                         android:layout_marginTop="5dp"
                         android:text="Scan"
-                        android:textStyle="bold"
-                        />
-
-
-
-
-
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
 
 
-
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_margin="10dp"
                 android:id="@+id/mapCardViewId"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30sp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:padding="10dp"
-                        android:src="@drawable/scan"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        />
+                        android:padding="10dp"
+                        android:src="@drawable/journey" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_margin="10dp"
-                        android:background="@color/cardview_dark_background"
-                        />
+                        android:background="@color/cardview_dark_background" />
+
                     <TextView
-                        android:textAppearance="?android:textAppearanceLarge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Open Map"
-                        android:textStyle="bold"
                         android:gravity="center"
-                        />
-
-
-
-
-
+                        android:text="Start Journey"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
 
 
-
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_margin="10dp"
                 android:id="@+id/tolllistCardViewId"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30sp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:padding="10dp"
-                        android:src="@drawable/history"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        />
+                        android:padding="10dp"
+                        android:src="@drawable/history" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_margin="10dp"
-                        android:background="@color/cardview_dark_background"
-                        />
+                        android:background="@color/cardview_dark_background" />
+
                     <TextView
-                        android:textAppearance="?android:textAppearanceLarge"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="61dp"
                         android:layout_marginTop="5dp"
                         android:text="Toll list"
-                        android:textStyle="bold"
-                        />
-
-
-
-
-
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
-
-
 
 
             </androidx.cardview.widget.CardView>
@@ -199,32 +177,32 @@
             android:layout_height="0dp">
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_margin="10dp"
                 android:id="@+id/historyCardViewId"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30sp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/recharge" />
+                        android:src="@drawable/record" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_margin="10dp"
-                        android:background="@color/cardview_dark_background"
-                        />
+                        android:background="@color/cardview_dark_background" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -236,37 +214,32 @@
                         android:textStyle="bold" />
 
 
-
-
-
-
-
                 </LinearLayout>
 
 
-
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_margin="10dp"
                 android:id="@+id/paymentCardViewId"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30sp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/recharge" />
+                        android:src="@drawable/addbalance" />
 
                     <View
                         android:layout_width="match_parent"
@@ -289,46 +262,43 @@
                 </LinearLayout>
 
 
-
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_margin="10dp"
                 android:id="@+id/profileCardViewId"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="30sp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:padding="10dp"
-                        android:src="@drawable/user"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        />
+                        android:padding="10dp"
+                        android:src="@drawable/user" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_margin="10dp"
-                        android:background="@color/cardview_dark_background"
-                        />
+                        android:background="@color/cardview_dark_background" />
+
                     <TextView
-                        android:textAppearance="?android:textAppearanceLarge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Profile"
-                        android:textStyle="bold"
-                        />
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView27"
@@ -339,8 +309,6 @@
 
 
                 </LinearLayout>
-
-
 
 
             </androidx.cardview.widget.CardView>

@@ -10,7 +10,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
-import android.content.Intent;
+
 import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -143,7 +143,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                  users=dataSnapshot.getValue(Users.class);
-                Toast.makeText(getApplicationContext(),users.getEmail(), Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -166,7 +166,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Toast.makeText(MapsActivity.this, "Please check your internet connection!!", Toast.LENGTH_SHORT).show();
             }
         });
-        tollref.addListenerForSingleValueEvent(new ValueEventListener() {
+        tollref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 storedtolls.clear();
@@ -174,7 +174,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 {
                     storedtolls.add(toll.getValue(Toll.class));
                 }
-                Toast.makeText(MapsActivity.this,storedtolls.toString(), Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -187,13 +187,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void initarea() {
-
-
-
-
-
-
-/**
+        /**
         tolls.add(new LatLng(19.043492, 72.824657));//bandra worli
         tolls.add(new LatLng(19.064475, 72.980455));//vashi toll
         tolls.add(new LatLng(19.153421, 72.965696));//airoli toll booth
@@ -307,21 +301,33 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.i("CALLED","ME");
         Toll nearresttoll=getnearesttoll(location,storedtolls);
 
-        String costof;
+        String costof=null;
         String vehicletype;
+        Log.i("VEHICLEID",vehicle.getId());
         if (vehicle.getId().equals("1")) {
+            Toast.makeText(this, "loop1", Toast.LENGTH_SHORT).show();
             vehicletype = "LMV/Car";
+
             costof=nearresttoll.getLmv_price();
+            Log.i("VEHICLECOST",costof);
         }
-            if(vehicle.getId().equals("2")) {
+        else if(vehicle.getId().equals("2")) {
+            Toast.makeText(this, "loop2", Toast.LENGTH_SHORT).show();
+
                 vehicletype = "Bus/Truck";
                 costof=nearresttoll.getBus_Truck_price();
+            Log.i("VEHICLECOST",costof);
             }
-        else
-            vehicletype="Multiaxle";
-        costof=nearresttoll.getMultiaxle_price();
+        else {
+            Toast.makeText(this, "loopelse", Toast.LENGTH_SHORT).show();
+
+                vehicletype = "Multiaxle";
+                costof = nearresttoll.getMultiaxle_price();
+            Log.i("VEHICLECOST",costof);
+            }
+        Log.i("VEHICLECOST",costof);
         tstatus=Integer.parseInt(users.getBalance())<Integer.parseInt(costof);
-        sendnotofication("Good day " + users.getName() + ",you have a Toll coming up!!!", "I guess its" + nearresttoll.getTollName());
+        sendnotofication("Good day " + users.getName() + ",you have a Toll coming up!!!", "My Algorithm says its " + nearresttoll.getTollName());
         Log.i("this",Integer.toString(journeysetter));
         if(!tstatus && journeysetter==1) {
 
@@ -380,14 +386,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onKeyExited(String key) {
 
         Log.i("CALLED","ME");
-        if(record.getStatus().equals("paid"))
+        try {
+            if (record.getStatus().equals("paid")) {
+
+
+            }
+        }catch (Exception e)
         {
-            int rem=Integer.parseInt(users.getBalance())-Integer.parseInt(record.getCost());
-            Toast.makeText(this, Integer.toString(rem), Toast.LENGTH_SHORT).show();
-            userReference.child("balance").setValue(Integer.toString(rem));
+            finish();
         }
 
         if(!tstatus && journeysetter==2) {
+            int rem=Integer.parseInt(users.getBalance())-Integer.parseInt(record.getCost());
+            userReference.child("balance").setValue(Integer.toString(rem));
             Log.i("this",Integer.toString(journeysetter));
             recordref.push().setValue(record);
             sendnotofication("Happy Journey", String.format("Rs %s has been deducted from your account", record.getCost()));

@@ -6,6 +6,8 @@ import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,9 +36,9 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
-
+    public static Uri uri;
     private ArrayList<Record> dataSet;
-
+public static Bitmap bmap;
 private static  DatabaseReference databaseReference;
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -103,6 +105,7 @@ private static  DatabaseReference databaseReference;
                 // Handle any errors
             }
         });
+
 
     }
 
