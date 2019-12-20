@@ -32,6 +32,7 @@ import android.widget.Toast;
 
 import com.example.digitaltolling.Models.Record;
 import com.example.digitaltolling.Models.Toll;
+import com.example.digitaltolling.Models.TollData;
 import com.example.digitaltolling.Models.Users;
 import com.example.digitaltolling.R;
 import com.firebase.geofire.GeoFire;
@@ -87,6 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private DatabaseReference userReference,recordref;
     private DatabaseReference vehicleref;
     private DatabaseReference tollref;
+    private DatabaseReference tolldata;
     private GeoFire geoFire;
     private List<LatLng> tolls = new ArrayList<>();
     private FirebaseDatabase firebaseDatabase;
@@ -98,6 +100,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Record record;
     private static int journeysetter=1;
     private Boolean tstatus;
+    private Boolean notificationstatus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,7 +140,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void getuserandcar() {
         FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
-
+tolldata=FirebaseDatabase.getInstance().getReference().child("tolldata");
         userReference=FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid());
         userReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -279,7 +282,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.addCircle(new CircleOptions().center(l).radius(100)
                     .strokeColor(Color.BLUE).strokeWidth(5.0f).fillColor(Color.TRANSPARENT));
 
-            GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(l.latitude, l.longitude), 0.5f);
+            GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(l.latitude, l.longitude), 0.1f);
             geoQuery.addGeoQueryEventListener(MapsActivity.this);
         }
 
@@ -327,12 +330,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         Log.i("VEHICLECOST",costof);
         tstatus=Integer.parseInt(users.getBalance())<Integer.parseInt(costof);
-        sendnotofication("Good day " + users.getName() + ",you have a Toll coming up!!!", "My Algorithm says its " + nearresttoll.getTollName());
+
         Log.i("this",Integer.toString(journeysetter));
         if(!tstatus && journeysetter==1) {
-
+            TollData tollData=new TollData(vehicle.getUrl(),vehicle.getPlateNo(),users.getBalance(),vehicletype,vehicle.getVehicleName(),costof,"true",nearresttoll.getTollName());
+            tolldata.push().setValue(tollData);
             record=new Record(users.getName(),vehicle.getUrl(),vehicletype,costof,nearresttoll.getTollName(),"paid",vehicle.getVehicleName());
             journeysetter=2;
+            sendnotofication("Good day " + users.getName() + ",you have a Toll coming up!!!", "My Algorithm says its " + nearresttoll.getTollName());
             Log.i("this",Integer.toString(journeysetter));
         }
 
@@ -400,11 +405,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             int rem=Integer.parseInt(users.getBalance())-Integer.parseInt(record.getCost());
             userReference.child("balance").setValue(Integer.toString(rem));
             Log.i("this",Integer.toString(journeysetter));
-            recordref.push().setValue(record);
+            if(!users.getBalance().equals("0")){
+            recordref.push().setValue(record);}
             sendnotofication("Happy Journey", String.format("Rs %s has been deducted from your account", record.getCost()));
             journeysetter=1;
-
+notificationstatus=true;
             mMap.clear();
+            finish();
 
         }
         Log.i("this",Integer.toString(journeysetter));

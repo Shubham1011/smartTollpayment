@@ -157,7 +157,8 @@ final List<Record> recordList=new ArrayList<>();
                 final int value=Integer.parseInt(user.getBalance().toString());
 
                 Toast.makeText(getContext(),Integer.toString(minbal)+value, Toast.LENGTH_SHORT).show();
-                if(value>minbal)
+
+                if(value>=minbal)
                 {
 
 
@@ -166,7 +167,8 @@ final List<Record> recordList=new ArrayList<>();
 
                 }
                 else {
-
+                    paymentCardViewId.setEnabled(true);
+                    paymenttext.setText("Add Balance");
                     /*Here you can do anything with above textview like text.setTextColor(Color.parseColor("#000000"));*/
                     new CountDownTimer(2000, 1000)
                     {
