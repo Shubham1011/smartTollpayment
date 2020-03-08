@@ -34,7 +34,7 @@ import com.google.firebase.database.ValueEventListener;
  */
 public class ProfileFragment extends Fragment {
 
-    TextView userName,email,nid,balance;
+    TextView userName,email,balance;
     ImageView userImage;
 
     DatabaseReference ref;
@@ -97,7 +97,7 @@ public class ProfileFragment extends Fragment {
 
         userName = view.findViewById(R.id.userName);
         email = view.findViewById(R.id.userMail);
-        nid = view.findViewById(R.id.userNid);
+
         userImage = view.findViewById(R.id.user_image);
         balance=view.findViewById(R.id.balanceId);
 
@@ -120,7 +120,7 @@ public class ProfileFragment extends Fragment {
                     Users users = dataSnapshot.getValue(Users.class);
                     userName.setText(users.getName());
                     email.setText(users.getEmail());
-                    nid.setText(users.getNid());
+
                     balance.setText(users.getBalance());
                     Glide.with(getContext()).load(currentUser.getPhotoUrl()).into(userImage);
                 }

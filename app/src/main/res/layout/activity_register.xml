@@ -38,63 +38,48 @@
         />
 
     <EditText
-        android:background="@drawable/reg_edittext_style"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
-        android:hint="Email or Phone number"
-        android:textColor="#1900ff"
         android:id="@+id/emailId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:background="@drawable/reg_edittext_style"
-        android:textStyle="bold"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
-        android:hint="NID no."
-        android:inputType="number"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/reg_edittext_style"
+        android:hint="Email , will be required to login "
         android:textColor="#1900ff"
-        android:id="@+id/nidId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
     <EditText
-        android:background="@drawable/reg_edittext_style"
-        android:inputType="textPassword"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:hint="Password"
-        android:textColor="#1900ff"
         android:id="@+id/passId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:background="@drawable/reg_edittext_style"
-        android:inputType="textPassword"
-        android:textStyle="bold"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="20dp"
-        android:hint="Confirm Password"
+        android:background="@drawable/reg_edittext_style"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="#1900ff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <EditText
         android:id="@+id/confirmPassId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/reg_edittext_style"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#1900ff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:layout_marginTop="15dp"

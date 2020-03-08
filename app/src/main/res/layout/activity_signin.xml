@@ -53,7 +53,7 @@
         android:background="@drawable/button4"
         android:drawableLeft="@drawable/ic_action_phone"
         android:paddingLeft="8dp"
-        android:text="Sign in With Phone"
+        android:text="Register with phone number"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,16 +62,20 @@
         app:layout_constraintVertical_bias="0.192" />
 
     <TextView
-        android:id="@+id/newUserText"
-        android:layout_width="167dp"
-        android:layout_height="27dp"
-        android:text="Not a user?Register"
-        android:textSize="18dp"
-        android:textColor="#FC2F45"
-        android:textStyle="bold"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="85dp"
+        android:text="First Time users only"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPhone"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

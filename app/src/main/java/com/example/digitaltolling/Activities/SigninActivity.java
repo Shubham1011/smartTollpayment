@@ -22,15 +22,15 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
         mAuth = FirebaseAuth.getInstance();
-           signWithMailBtn = findViewById(R.id.btnMail);
+         signWithMailBtn = findViewById(R.id.btnMail);
            signWithPhnBtn = findViewById(R.id.btnPhone);
-        register = findViewById(R.id.newUserText);
+//        register = findViewById(R.id.newUserText);
 
            signWithPhnBtn.setOnClickListener(this);
            signWithMailBtn.setOnClickListener(this);
 
 
-        register.setOnClickListener(new View.OnClickListener() {
+   /**     register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -39,7 +39,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
 
 
             }
-        });
+        }); **/
     }
 
     @Override

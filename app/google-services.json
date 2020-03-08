@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "760038030039-qd3fumf196bof4saat47ibbq479jj12u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digitaltolling",
+            "certificate_hash": "11148a39ec6783c87e996d879ee1cf0637b4d99d"
+          }
+        },
+        {
           "client_id": "760038030039-9iu1grvtfhbl8pnjt1sdakjlrum1t537.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

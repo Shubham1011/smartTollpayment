@@ -439,8 +439,8 @@ notificationstatus=true;
         builder.setContentTitle(title);
         builder.setContentText(content)
                 .setAutoCancel(false)
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
+                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher_background));
         Notification notification = builder.build();
         notificationManager.notify(new Random().nextInt(), notification);
 

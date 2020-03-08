@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-   private EditText name,userEmail,nidNo,userPassword,userPassword2;
+   private EditText name,userEmail,userPassword,userPassword2;
    private ProgressBar loadingProgress;
    private Button regBtn;
    private FirebaseAuth mAuth;
@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         name = (EditText)findViewById(R.id.nameId);
         userEmail = (EditText)findViewById(R.id.emailId);
-        nidNo = (EditText)findViewById(R.id.nidId);
+
         userPassword = (EditText)findViewById(R.id.passId);
         userPassword2 =(EditText)findViewById(R.id.confirmPassId);
         loadingProgress = (ProgressBar)findViewById(R.id.progressBar2);
@@ -80,14 +80,14 @@ public class RegisterActivity extends AppCompatActivity {
 
                 final String username = name.getText().toString();
                 final String email = userEmail.getText().toString();
-                final String nid = nidNo.getText().toString();
+
                 final String password = userPassword.getText().toString();
                 final String password2 = userPassword2.getText().toString();
                 final String balance="0";
 
 
 
-                if ( username.isEmpty() || email.isEmpty() || nid.isEmpty() || password.isEmpty() || !password.equals(password2)) {
+                if ( username.isEmpty() || email.isEmpty()  || password.isEmpty() || !password.equals(password2)) {
 
 
                     //we need to display an error message
@@ -101,7 +101,7 @@ public class RegisterActivity extends AppCompatActivity {
                 else {
                     //everything is okk
 
-                    CreateUserAccount(username,email,nid,password,balance);
+                    CreateUserAccount(username,email,password,balance);
 
 
                 }
@@ -133,7 +133,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    private void CreateUserAccount(final String username, final String email, final String nid, String password, final String balance) {
+    private void CreateUserAccount(final String username, final String email, String password, final String balance) {
 
             mAuth.createUserWithEmailAndPassword(email,password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -144,7 +144,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 showMessage("Account created");
                                 //update profile picture and name
                                 //updateUserInfo( username ,pickedImagUri,mAuth.getCurrentUser());
-                                createUser(username,email,nid,balance);
+                                createUser(username,email,balance);
                             }
                             else
                             {
@@ -291,18 +291,17 @@ public class RegisterActivity extends AppCompatActivity {
         }*/
     }
 
-    private void createUser(String name,String email,String nid,String balance){
+    private void createUser(String name,String email,String balance){
         DatabaseReference mReferance= FirebaseDatabase.getInstance().getReference("Users");
         Users model=new Users(
                 name,
-                email,
-                nid,balance
+                email,balance
 
         );
         mReferance.child(mAuth.getCurrentUser().getUid()).setValue(model).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                Toast.makeText(getApplicationContext(),"successfuly",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Hold on a sec ..",Toast.LENGTH_LONG).show();
             }
         });
 

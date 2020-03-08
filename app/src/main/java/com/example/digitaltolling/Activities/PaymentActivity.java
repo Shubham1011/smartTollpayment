@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.digitaltolling.Fragments.HomeFragment;
 import com.example.digitaltolling.Models.Payment;
 import com.example.digitaltolling.Models.Record;
 import com.example.digitaltolling.Models.Users;
@@ -73,7 +74,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         currentUser = mAuth.getCurrentUser();
         payBtn = findViewById(R.id.payBtn);
         payBtn.setOnClickListener(this);
-
+amount1=new EditText(getApplicationContext());
         ref=FirebaseDatabase.getInstance().getReference();
 
 
@@ -84,12 +85,11 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        String uid=currentUser.getUid();
-        amount1=findViewById(R.id.amount);
-        ref.child("Users").child(uid).child("balance").setValue(amount1.getText().toString());
+
+
         String topayamount=amount1.getText().toString();
-        String upiId="chiraggsam@okaxis";
-        String name="Chirag Samtani";
+        String upiId="shubhamspalkar@oksbi";
+        String name="Shubham Palkar";
         String note="Toll Payment";
         payusingupi(topayamount,upiId,name,note);
 
@@ -176,8 +176,14 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
             if (status.equals("success")) {
                 //Code to handle successful transaction here.
                 Toast.makeText(PaymentActivity.this, "Transaction successful.", Toast.LENGTH_SHORT).show();
+                String uid=currentUser.getUid();
+                amount1=findViewById(R.id.amount);
+                ref.child("Users").child(uid).child("balance").setValue(amount1.getText().toString());
+
 
                 Log.d("UPI", "responseStr: "+approvalRefNo);
+                Intent intent=new Intent(this, Home.class);
+                startActivity(intent);
             }
             else if("Payment cancelled by user.".equals(paymentCancel)) {
                 Toast.makeText(PaymentActivity.this, "Payment cancelled by user.", Toast.LENGTH_SHORT).show();

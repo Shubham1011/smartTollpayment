@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/76d842132af7968566a4ff24cc42d136/jetified-verticalseekbar-0.7.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/76d842132af7968566a4ff24cc42d136/jetified-verticalseekbar-0.7.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d7c74e0e2eb228204cfe66836eac61b8/jetified-verticalseekbar-0.7.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d7c74e0e2eb228204cfe66836eac61b8/jetified-verticalseekbar-0.7.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h6ah4i.android.widget.verticalseekbar/verticalseekbar/0.7.2/789c12344523c00a69c8d4b62900c5c94a42e8a7/verticalseekbar-0.7.2-javadoc.jar!/" />

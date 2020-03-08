@@ -60,6 +60,7 @@ public class HomeFragment extends Fragment {
     FirebaseUser firebaseUser;
     Users user;
     TextView paymenttext;
+    TextView maptext;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -119,7 +120,7 @@ public  Vehicle v;
                     minbal=115;
 
                 }
-                Toast.makeText(getContext(), ""+minbal+"id"+id, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), ""+minbal+"id"+id, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -127,6 +128,9 @@ public  Vehicle v;
 
             }
         });
+
+        Log.i("Lol","lol");
+
 
     }
 
@@ -137,60 +141,89 @@ public  Vehicle v;
 
         View view =  inflater.inflate(R.layout.fragment_home, container, false);
 final List<Record> recordList=new ArrayList<>();
-        scannerCardView = view.findViewById(R.id.scannerCardViewId);
+
         tolllistCardView = view.findViewById(R.id.tolllistCardViewId);
         historyCardView = view.findViewById(R.id.historyCardViewId);
         profileCardView = view.findViewById(R.id.profileCardViewId);
         paymentCardViewId=view.findViewById(R.id.paymentCardViewId);
+        maptext=view.findViewById(R.id.maptext);
         paymenttext=view.findViewById(R.id.paymenttext);
         databaseReference=FirebaseDatabase.getInstance().getReference();
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
         recordref=FirebaseDatabase.getInstance().getReference().child("record").child(firebaseUser.getUid());
-
-        Toast.makeText(getContext(), "oncreateciew"+Integer.toString(minbal), Toast.LENGTH_SHORT).show();
-        Log.i("minbal", Integer.toString(minbal));
-   databaseReference.child("Users").child(firebaseUser.getUid()).addValueEventListener(new ValueEventListener() {
+        vehicleref= FirebaseDatabase.getInstance().getReference().child("vehicles").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        vehicleref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                user=dataSnapshot.getValue(Users.class);
-                final int value=Integer.parseInt(user.getBalance().toString());
+                String id=dataSnapshot.getValue(Vehicle.class).getId();
 
-                Toast.makeText(getContext(),Integer.toString(minbal)+value, Toast.LENGTH_SHORT).show();
-
-                if(value>=minbal)
-                {
-
-
-                    paymentCardViewId.setEnabled(false);
-                    paymenttext.setText("Rs."+value);
-
+                if(id.equals("1")) {minbal=45;
+                    Log.i("HEHY",Integer.toString(minbal));
+                }
+                else if(id.equals("2")) {
+                    Log.i("HEHY",Integer.toString(minbal));
+                    minbal=90;
                 }
                 else {
-                    paymentCardViewId.setEnabled(true);
-                    paymenttext.setText("Add Balance");
-                    /*Here you can do anything with above textview like text.setTextColor(Color.parseColor("#000000"));*/
-                    new CountDownTimer(2000, 1000)
-                    {
-
-                        public void onTick(long millisUntilFinished) { final Toast toast = Toast.makeText(getContext(),"Your balance is Rs."+value+" deemed as a low balance \n " +
-                                "Please Tap  Add Balance for smooth experience", Toast.LENGTH_SHORT);
-                            View view = toast.getView();
-                            view.setBackgroundColor(Color.RED);
-
-
-                            TextView text = (TextView) view.findViewById(android.R.id.message);
-                            text.setTextColor(Color.WHITE);
-                            text.setGravity(Gravity.CENTER);
-                        toast.show();}
-                        public void onFinish() {
-                        }
-
-
-                    }.start();
+                    Log.i("HEHY",Integer.toString(minbal));
+                    minbal=115;
 
                 }
+                databaseReference.child("Users").child(firebaseUser.getUid()).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        user=dataSnapshot.getValue(Users.class);
+                        final int value=Integer.parseInt(user.getBalance().toString());
 
+                        Toast.makeText(getContext(),Integer.toString(minbal)+value, Toast.LENGTH_SHORT).show();
+
+                        if(value>=minbal)
+                        {
+                            maptext.setText("Start Journey");
+                            maptext.setTextColor(Color.BLACK);
+                            mapCardViewId.setEnabled(true);
+                            paymentCardViewId.setEnabled(false);
+                            paymenttext.setText("Rs."+value);
+
+                        }
+                        else {
+                            paymentCardViewId.setEnabled(true);
+                            mapCardViewId.setEnabled(false);
+                            paymenttext.setText("Add Balance");
+                            maptext.setText("Low Balance");
+                            maptext.setTextColor(Color.RED);
+                            /*Here you can do anything with above textview like text.setTextColor(Color.parseColor("#000000"));*/
+                            new CountDownTimer(2000, 1000)
+                            {
+
+                                public void onTick(long millisUntilFinished) {
+                                    final Toast toast = Toast.makeText(getContext(),"Your balance is Rs."+value+" deemed as a low balance \n " +
+                                            "Please Tap  Add Balance for smooth experience", Toast.LENGTH_SHORT);
+                                    View view = toast.getView();
+                                    view.setBackgroundColor(Color.RED);
+
+
+                                    TextView text = (TextView) view.findViewById(android.R.id.message);
+                                    text.setTextColor(Color.WHITE);
+                                    text.setGravity(Gravity.CENTER);
+                                    toast.show();}
+                                public void onFinish() {
+                                }
+
+
+                            }.start();
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+                //Toast.makeText(getContext(), ""+minbal+"id"+id, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -198,22 +231,15 @@ final List<Record> recordList=new ArrayList<>();
 
             }
         });
+        Toast.makeText(getContext(), "oncreateciew"+Integer.toString(minbal), Toast.LENGTH_SHORT).show();
+        Log.i("minbal", Integer.toString(minbal));
 
 
 
 
 
         mapCardViewId=view.findViewById(R.id.mapCardViewId);
-        scannerCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (view.getId()== R.id.scannerCardViewId){
 
-                    Intent intent = new Intent(getActivity(), ScannerActivity.class);
-                    startActivity(intent);
-                }
-            }
-        });
 
         paymentCardViewId.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -280,6 +306,7 @@ final List<Record> recordList=new ArrayList<>();
 
     @Override
     public void onAttach(Context context) {
+
         super.onAttach(context);
     }
 
