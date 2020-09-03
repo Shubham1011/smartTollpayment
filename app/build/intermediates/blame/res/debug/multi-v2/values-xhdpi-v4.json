@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "outputFile": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shubh\\.gradle\\caches\\transforms-2\\files-2.1\\7489bf701cf3588069d63cc77ad01483\\jetified-core-1.9\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "source": "C:\\Users\\shubh\\.gradle\\caches\\transforms-2\\files-2.1\\946561c5d1eaa821b05fff69d3cbe942\\jetified-core-1.9\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

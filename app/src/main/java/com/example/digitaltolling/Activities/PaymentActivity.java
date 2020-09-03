@@ -60,8 +60,8 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
     String newKey;
     int flag=0, flag1=0, flag2=0;
     ProgressDialog dialog;
-
-
+    boolean TESTING=true;
+     static int currentbal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,13 +69,12 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         dialog = new ProgressDialog(this);
         dialog.setTitle("Pending");
         dialog.setMessage("Please wait for confirmation");
-        dialog.setCancelable(true);
+        dialog.setCancelable(true);int currentbal=0;
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
         payBtn = findViewById(R.id.payBtn);
         payBtn.setOnClickListener(this);
 amount1=new EditText(getApplicationContext());
-        ref=FirebaseDatabase.getInstance().getReference();
 
 
 
@@ -85,15 +84,27 @@ amount1=new EditText(getApplicationContext());
 
     @Override
     public void onClick(View view) {
+        ref=FirebaseDatabase.getInstance().getReference();
 
+        Toast.makeText(this.getApplicationContext(),"current balance is"+currentbal,Toast.LENGTH_LONG);
 
         String topayamount=amount1.getText().toString();
         String upiId="shubhamspalkar@oksbi";
         String name="Shubham Palkar";
         String note="Toll Payment";
-        payusingupi(topayamount,upiId,name,note);
-
-
+        if(!TESTING) {
+            payusingupi(topayamount, upiId, name, note);
+        }
+        else {
+            Toast.makeText(PaymentActivity.this, "Transaction successful.", Toast.LENGTH_SHORT).show();
+            String uid = currentUser.getUid();
+            amount1 = findViewById(R.id.amount);
+         Log.i("current balance",Integer.toString(HomeFragment.value));
+            String totalamount=Integer.toString(Integer.parseInt(amount1.getText().toString())+HomeFragment.value);
+            ref.child("Users").child(uid).child("balance").setValue(totalamount);
+            Intent intent = new Intent(this, Home.class);
+            startActivity(intent);
+        }
 
     }
 
@@ -150,6 +161,7 @@ amount1=new EditText(getApplicationContext());
         }
     }
     private void upiPaymentDataOperation(ArrayList<String> data) {
+
         if (isConnectionAvailable(PaymentActivity.this)) {
             String str = data.get(0);
             Log.d("UPIPAY", "upiPaymentDataOperation: "+str);
@@ -178,7 +190,8 @@ amount1=new EditText(getApplicationContext());
                 Toast.makeText(PaymentActivity.this, "Transaction successful.", Toast.LENGTH_SHORT).show();
                 String uid=currentUser.getUid();
                 amount1=findViewById(R.id.amount);
-                ref.child("Users").child(uid).child("balance").setValue(amount1.getText().toString());
+                String totalamount=Integer.toString(Integer.parseInt(amount1.getText().toString())+HomeFragment.value);
+                ref.child("Users").child(uid).child("balance").setValue(totalamount);
 
 
                 Log.d("UPI", "responseStr: "+approvalRefNo);

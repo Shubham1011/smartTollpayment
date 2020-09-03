@@ -71,6 +71,7 @@ public  int minbal;
     private String mParam1;
     private String mParam2;
 public  Vehicle v;
+public static int value;
     private OnFragmentInteractionListener mListener;
 
     public HomeFragment() {
@@ -129,8 +130,6 @@ public  Vehicle v;
             }
         });
 
-        Log.i("Lol","lol");
-
 
     }
 
@@ -174,7 +173,7 @@ final List<Record> recordList=new ArrayList<>();
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         user=dataSnapshot.getValue(Users.class);
-                        final int value=Integer.parseInt(user.getBalance().toString());
+                         value=Integer.parseInt(user.getBalance().toString());
 
                         Toast.makeText(getContext(),Integer.toString(minbal)+value, Toast.LENGTH_SHORT).show();
 

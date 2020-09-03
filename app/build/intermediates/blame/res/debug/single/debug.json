@@ -1,438 +1,438 @@
 [
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\font_alfa_slab_one.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\font\\alfa_slab_one.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_carphoto.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\carphoto.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_mail.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_mail.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_number.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_number.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_smartphone.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\smartphone.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_scan.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\scan.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button2.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\button2.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reg_edittext_style.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\reg_edittext_style.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_phone.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_phone.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tollroad.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\tollroad.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_mail.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_mail.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home2.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_home2.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_nogod.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\nogod.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_number.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_number.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_home.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\app_bar_home.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_manage.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\menu_home.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\menu\\home.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_payment.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_gallery.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tollroad.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\tollroad.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_sample_layout.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\sample_layout.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_slideshow.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upis.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\upis.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\font_alfa_slab_one.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\font\\alfa_slab_one.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_maps.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_journey.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\journey.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_payment.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\payment.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_record.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\record.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_recharge.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\recharge.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bkashlogo.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\bkashlogo.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signin.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_signin.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_items.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\items.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_code.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_code.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_phone.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_phone.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_carphoto.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\carphoto.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reg_edittext_style.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\reg_edittext_style.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vehiclereg.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_vehiclereg.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_name.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_name.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_phone.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_phone.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black_24dp.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_settings_black_24dp.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scanner.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_scanner.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background2.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\background2.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_launcher_icon.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\launcher_icon.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rupee.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\rupee.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_arrowbutton.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\arrowbutton.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background3.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\background3.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_number.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_number.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signin.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_signin.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_phone.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_phone.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paytm.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\paytm.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_history.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_items.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\items.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_name.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_userphoto.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\userphoto.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upis.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\upis.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button2.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\button2.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addvehicle.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\addvehicle.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_credit_card_black_24dp.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_credit_card_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_checked.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\checked.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_phone.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_phone.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_phone.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_phone.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bkashlogo.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\bkashlogo.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_exit_to_app_black_24dp.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_exit_to_app_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vehiclereg.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_vehiclereg.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_phone.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_phone.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_number.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_number.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_home.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\content_home.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_balance.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\balance.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button3.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\button3.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button5.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\button5.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_mail.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_mail.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_maps.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\background.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person_black_24dp.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_person_black_24dp.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person_black_24dp.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_person_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_number.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_number.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_send.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_phonenum.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_phonenum.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_rocketlogo.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\rocketlogo.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tolllist.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_tolllist.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_phone.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_phone.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\background.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tolllist.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_tolllist.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_nogod.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\nogod.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_home.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\nav_header_home.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_home.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\app_bar_home.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_message.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\message.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings_black_24dp.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_settings_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rupee.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\rupee.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_record.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\record.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_launcher_icon.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\launcher_icon.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background3.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\background3.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_user.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\user.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addbalance.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\addbalance.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button4.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\button4.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_load.jpg.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\load.jpg"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_load.jpg.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\load.jpg"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_sample_layout.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\sample_layout.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_history.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\history.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_black_24dp.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_email_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paytm.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\paytm.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_history.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_rocketlogo.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\rocketlogo.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button5.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\button5.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\button.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button3.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\button3.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_home2_drawer.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\menu\\activity_home2_drawer.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_balance.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\balance.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background2.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\background2.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_mail.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_mail.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_number.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_number.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_number.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_number.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_rejected.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\rejected.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_mail.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_mail.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_mail.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_mail.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gpay.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\gpay.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_black_24dp.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_email_black_24dp.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_phone.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_phone.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_checked.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\checked.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_code.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_code.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_name.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_manage.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_name.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_toll.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\toll.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_mail.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_mail.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_user.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\user.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_phone.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_phone.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_name.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_name.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_mail.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_mail.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_smartphone.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\smartphone.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_home2_drawer.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\menu\\activity_home2_drawer.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button4.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\button4.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_history.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\history.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gpay.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\gpay.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_number.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_number.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_phonenum.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_phonenum.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_exit_to_app_black_24dp.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_exit_to_app_black_24dp.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_home.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\content_home.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_payment.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\payment.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_journey.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\journey.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\menu_home.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\menu\\home.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_scan.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\scan.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_share.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_credit_card_black_24dp.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_credit_card_black_24dp.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home2.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\activity_home2.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_toll.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\toll.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_number.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_number.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_payment.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_mail.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-anydpi\\ic_action_mail.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_number.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_number.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_send.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_home.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\layout\\nav_header_home.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_home.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_message.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\message.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_rejected.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\rejected.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_share.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addbalance.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\addbalance.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_userphoto.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\userphoto.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_recharge.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\recharge.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_mail.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_mail.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_name.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\drawable-hdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button.xml.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\button.xml"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scanner.xml.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\layout\\activity_scanner.xml"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addvehicle.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable\\addvehicle.png"
     },
     {
-        "merged": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android\\android\\OTP-Verification-UI--Sign-up-using-OTP-Verification--2019-master\\smarttollpay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_arrowbutton.png.flat",
+        "source": "C:\\Users\\shubh\\StudioProjects\\smarttollpay\\app\\src\\main\\res\\drawable-v24\\arrowbutton.png"
     }
 ]
